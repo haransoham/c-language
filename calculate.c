@@ -45,9 +45,10 @@ void main(){
 
 
 
-        printf("would you like to calculate again (y/n):");
+        printf("Would you like to calculate again (y/n):");
         scanf("\n%c",&again);
         if(again!='y'){
+            printf("Thank you for using the Calculator program. Good BYE ☺️\n");
             break;
         }
 
