@@ -16,6 +16,7 @@ void main(){
         scanf("%f",&number1);
         printf("\n\tEnter second number:\t");
         scanf("%f",&number2);
+        operation_:
         printf("\n\tEnter operation (+, -, *, /):\t");
         scanf("\n%c", &operation);
         switch(operation){
@@ -34,10 +35,12 @@ void main(){
                         
                 }else{
                     printf("Error: Division by zero is not allowed");
+                    continue;
                 }
                 break;
             default:
              printf("Error: Wrong operation selection");
+             goto operation_;
         }
         printf("\n-----------------------------------------------\n");
         printf("  Answer:  %f %c %f = %f  \n",number1,operation,number2,ans);
